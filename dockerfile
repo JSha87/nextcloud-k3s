@@ -1,7 +1,6 @@
 FROM nextcloud:32.0.3-fpm-alpine
 
 # 1. Install build dependencies for the missing modules
-# We use 'apk add' for system libs and 'docker-php-ext-install' for the PHP glue
 RUN apk add --no-cache \
     libzip-dev \
     libpng-dev \
