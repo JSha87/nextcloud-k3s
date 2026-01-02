@@ -58,7 +58,7 @@ jobs:
           context: .
           push: true
           tags: |
-            ghcr.io/${{ env.OWNER_LC }}/wordpress-redis:latest
+            ghcr.io/${{ env.OWNER_LC }}/nextcloud-k3s:latest
 
   build-staging:
     needs: detect
@@ -84,4 +84,4 @@ jobs:
           context: staging
           push: true
           tags: |
-            ghcr.io/${{ env.OWNER_LC }}/wordpress-redis:staging
+            ghcr.io/${{ env.OWNER_LC }}/nextcloud-k3s:staging
